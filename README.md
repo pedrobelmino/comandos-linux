@@ -1,6 +1,5 @@
-Lista de comandos mais usados no Linux
-Numa manutenção de rotina usa-se os comandos em momentos de monitoração e (ou) urgência:
-
+**Lista de comandos mais usados no Linux**
+```bash
 ls: Lista todos os arquivos do diretório
 df: Mostra a quantidade de espaço usada no disco rígido
 top: Mostra o uso da memória
@@ -9,21 +8,11 @@ mkdir: Cria um diretório
 rm: Remove um arquivo/diretório
 cat: Abre um arquivo
 vi: Abre o editor vi (lê-se viai) para editar/criar arquivos
+```
 
-Lista de comandos por funcionalidades:
-Comandos de Controle e Acesso
-Comandos de Comunicações
-Comandos de Ajuda e Documentação
-Comandos de Edição de Texto
-Comandos de Gestão de Arquivos e Directorias
-Exibição ou Impressão de Arquivos
-Comandos de Transferência de Arquivos
-Comandos de Notícias ou Rede
-Comandos de Controlo de Processos
-Comandos de Informação de Estado
-Comandos de Processamento de Texto
-Web
-Comandos de Controle e Acesso
+
+**Comandos de Controle e Acesso**
+```bash
 exit: Terminar a sessão, ou seja, a shell (mais ajuda digitando man sh ou man csh)
 logout: Des-logar, ou seja, terminar a sessão atual, mas apenas na C shell e na bash shell
 passwd: Mudar a password do nosso utilizador (usuário logado)
@@ -31,30 +20,38 @@ rlogin: Logar de forma segura em outro sistema Unix/Linux
 ssh: Sessão segura, vem de secure shell, e permite-nos logar num servidor remoto através do protocolo ssh
 slogin: Versão segura do rlogin
 yppasswd: Mudar a password do nosso utilizador nas páginas amarelas (yellow pages)
+```
 
-Comandos de Comunicações
+**Comandos de Comunicações**
+```bash
 mail: Enviar e receber emails
 mesg: Permitir ou negar mensagens de terminal e pedidos de conversação (talk requests)
 pine: Outra forma de enviar e receber emails, uma ferramenta rápida e prática
 talk: Falar com outros utilizadores que estejam logados no momento
 write: Escrever para outros utilizadores que estejam logados no momento
+```
 
-Comandos de Ajuda e Documentação
+**Comandos de Ajuda e Documentação**
+```bash
 apropos: Localiza comandos por pesquisa de palavra-chave
 find: Localizar arquivos, como por exemplo: find . -name *.txt -print, para pesquisa de arquivos de texto do diretório atual
 info: Abre o explorador de informações
 man: Manual muito completo, pesquisa informação acerca de todos os comandos que necessitemos de saber, como por exemplo man find
 whatis: Descreve o que um determinado comando é/faz
 whereis: Localizar a página de ajuda (man page), código fonte, ou arquivos binários, de um determinado programa
+```
 
-Comandos de Edição de Texto
+**Comandos de Edição de Texto**
+```bash
 emacs: Editor de texto screen-oriented
 pico: Editor de texto screen-oriented, também chamado de nano
 sed: Editor de texto stream-oriented
 vi: Editor de texto full-screen
 vim: Editor de texto full-screen melhorado (vi improved)
+```
 
-Comandos de Gestão de Arquivos e Directorias
+**Comandos de Gestão de Arquivos e Directorias**
+```bash
 cd: Mudar de diretório atual, como por exemplo cd diretório, cd .., cd /
 chmod: Mudar a proteção de um arquivo ou diretório, como por exemplo chmod 777, parecido com o attrib do MS-DOS
 chown: Mudar o dono ou grupo de um arquivo ou diretório, vem de change owner
@@ -86,10 +83,10 @@ umask: Muda as proteções de arquivos
 uncompress: Restaura um arquivo comprimido
 uniq: Reporta ou apaga linhas repetidas num arquivo
 wc: Conta linhas, palavras e mesmo caracteres num arquivo
+```
 
-Exemplo: Cursos de Engenharia de Software
-
-Exibição ou Impressão de Arquivos
+**Comandos de Exibição ou Impressão de Arquivos**
+```bash
 cat: Mostra o conteúdo de um arquivo, como o comando type do MD-DOS, e é muito usado também para concatenar arquivos, como por exemplo fazendo cat a.txt b.txt > c.txt” para juntar o arquivo a.txtb.txt num único de nome c.txt
 fold: Encurta, ou seja, faz um fold das linhas longas para caberem no dispositivo de output
 head: Mostra as primeiras linhas de um arquivo, como por exemplo com head -10 a.txt, ou usado como filtro para mostrar apenas os primeiros x resultados de outro comando
@@ -105,21 +102,27 @@ zcat: Mostra-nos um arquivo comprimido
 xv: Serve para exibir, imprimir ou mesmo manipular imagens
 gv: Exibe arquivos ps e pdf
 xpdf: Exibe arquivos pdf, usa o gv
+```
 
-Comandos de Transferência de Arquivos
+**Comandos de Transferência de Arquivos**
+```bash
 ftp: Vem de file transfer protocol, e permite-nos, usando o protocolo de transferência de arquivos ftp, transferir arquivos entre vários hosts de uma rede, como a um servidor de ftp para enviar ou puxar arquivos
 rsync: Sincroniza de forma rápida e flexível dados entre dois computadores
 scp: Versão segura do rcp
+```
 
-Comandos de Notícias ou Rede
+**Comandos de Notícias ou Rede**
+```bash
 netstat: Mostra o estado da rede
 rsh: Um shell em outros sistemas UNIX
 ssh: Versão segura do rsh
 nmap: Poderoso port-scan, para visualizarmos portas abertas num dado host
 ifconfig: Visualizar os ips da nossa máquina, entre outras funções relacionadas com ips
 ping: Pingar um determinado host, ou seja, enviar pacotes icmp para um determinado host e medir tempos de resposta, entre outras coisas
+```
 
-Comandos de Controlo de Processos
+**Comandos de Controle de Processos**
+```bash
 kill: Mata um processo, como por exemplo kill -kill 100 ou kill -9 100 ou kill -9 %1
 bg: Coloca um processo suspenso em background
 fg: Ao contrário do comando bg, o fg traz de volta um processo ao foreground
@@ -127,8 +130,10 @@ jobs: Permite-nos visualizar jobs em execução, quando corremos uma aplicação
 top: Lista os processos que mais cpu usam, útil para verificar que processos estão a provocar um uso excessivo de memória, e quanta percentagem decpu cada um usa em dado momento
 ^y: Suspende o processo no próximo pedido de input
 ^z: Suspende o processo actual
+```
 
-Comandos de Informação de Estado
+**Comandos de Informação de Estado**
+```bash
 clock: Define a hora do processador
 date: Exibe a data e hora
 df: Exibe um resumo do espaço livre em disco
@@ -150,8 +155,10 @@ w: Mostra-nos quem está no sistema ou que comando cada job está a executar
 who: Mostra-nos quem está logado no sistema
 whois: Serviço de diretório de domínios da Internet, permite-nos saber informações sobre determinados domínios na Internet, quando um domínio foi registado, quando expira, etc
 whoami: Diz-nos quem é o dono da shell
+```
 
-Comandos de Processamento de Texto
+**Comandos de Processamento de Texto**
+```bash
 abiword: Processador de Texto Open Source
 addbib: Cria ou modifica bases de dados bibliográficas
 col: Reverte o filtro a line feeds
@@ -182,11 +189,14 @@ tbl: Formata tabelas para nroff/troff
 tex: Formata texto
 tpic: Converte arquivos pic source em comandos TeX
 wget: Permite-nos fazer o download completo de páginas web, com todos os arquivos, de forma fácil e não interactiva, sem exigir por isso presença do utilizador, respeitando também o arquivorobots.txt
+```
 
-Web
+**Web**
+```bash
 html2ps: Conversor de html para ps
 latex2html: Conversor de LaTeX para html
 lynx: Navegador web baseado em modo de texto, ou seja, é um web browser que nos permite abrir todo o tipo de páginas visualizando apenas os textos elinks, não vendo assim as imagens, e sendo por isso bastante rápido, mas requere prática para ser manuseado
 netscape: Navegador web da Netscape
 sitecopy: Aplicação que nos permite manter fácil e remotamente web sites
 weblint: Verificador de sintaxes e de estilos html
+```
